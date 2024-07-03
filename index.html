@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1{
+            position: sticky;
+            text-align: center;
+            background-color: lavenderblush;
+            top: 20px;
+            height: 40px;
+            width: 95%;
+            margin: 3%;
+        }
+
+        .one img,.seven img, .eleven img{
+            float: left;
+            margin-right: 10px;
+        }
+
+        .two img, .four img, .five img, .six img, .twelve img{
+            float: right;
+            margin-left: 10px;
+        }
+
+        .three{
+            background-color: bisque;
+            overflow: auto;
+        }
+
+        .eight{
+            overflow: auto;
+        }
+
+        .eight img{
+            float: left;
+            margin-right: 10px;
+        }
+        .nine{
+            clear: both;
+            background-color: lightyellow;
+        }
+
+        .ten img{
+            float: bottom;
+            margin-bottom: 10px;
+        }
+
+
+        .s img{
+            position: fixed;
+            left: 730px;
+            top:200px;
+        }
+
+        .s1{
+            background-color: lightgoldenrodyellow;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            left: 700px;
+            bottom: 20px;
+            z-index: 3;
+        }
+
+        .s2{
+            background-color: aquamarine;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            left: 700px;
+            bottom: 50px;
+            z-index: 2;
+        }
+
+        .s3{
+            background-color: salmon;
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            left: 700px;
+            bottom: 60px;
+        }
+
+        .abs{
+            background-color: lightsalmon;
+            border: 2px solid black;
+            height: 150px;
+            width: 300px;
+            margin-top: 150px;
+            margin-left: 300px;
+            position: relative;
+        
+        }
+
+        h4{
+            position: absolute;
+            bottom: 20px;
+        }
+
+    </style>
+</head>
+<body style="background-color:lavender">
+    <h1>CSS Positioning, Float and Clear</h1>
+   
+
+    <main>
+        <p class="one"><img src="web.png" height="45px" width="45px" alt="web">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Eligendi dignissimos sed quas non aperiam totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci 
+        odio sequi quisquam odit cumque dolorum, eius sed laudantium ducimus neque.</p>
+
+        
+        <p class="two"><img src="people.png" height="45px" width="45px" alt="spidey">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit, amet consectetur 
+        adipisicing elit. Doloremque optio itaque nulla tenetur vel totam!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam 
+        nobis quidem in commodi iure asperiores excepturi nulla eveniet incidunt molestias.</p>
+
+
+        <p class="three"><img src="web.png" height="45px" width="45px" alt="web">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Itaque, eligendi voluptate nulla debitis ad nesciunt. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam
+        fuga delectus quam eos porro. Dolore reiciendis nisi quo veritatis quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos 
+        facere vel incidunt. Quidem maxime temporibus eum quod officia magnam porro perferendis aspernatur repudiandae totam. Quis quasi
+         totam dolores aperiam omnis consectetur placeat, ducimus cumque, minima magnam quos tempora quod aspernatur incidunt quia molestiae ratione illo 
+         officia pariatur, fugit assumenda sapiente ipsam. Libero debitis, odio explicabo exercitationem modi nemo, ut 
+        deleniti deserunt dolor consequuntur officia unde vero accusamus ratione dicta maxime!</p>
+
+
+        <p class="four"><img src="people.png" height="45px" width="45px" alt="spidey">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum, dolor sit amet consectetur 
+        adipisicing elit. Voluptas deserunt corrupti sint. Placeat, accusantium? Voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Consequuntur nostrum iusto nobis natus numquam eum ipsum cumque quisquam a explicabo?</p>
+
+        <p class="five"><img src="web.png" height="45px" width="45px" alt="web">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur, 
+        adipisicing elit. Assumenda sunt corporis ea deserunt, nulla neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo excepturi 
+        asperiores fuga ducimus adipisci reprehenderit accusamus ipsa dicta iusto atque?</p>
+
+
+
+        <p class ="s"><img src="batman.png" height="100px" width="100px" alt="batman"></p>
+
+
+
+        <p class="six"><img src="people.png" height="45px" width="45px" alt="spidey">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Eos, maxime unde. Repudiandae reiciendis inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil molestias
+        dolorem nam molestiae nesciunt suscipit obcaecati repellendus veniam tempora assumenda.</p>
+
+        <p class="seven"><img src="web.png" height="45px" width="45px" alt="web">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Modi distinctio commodi vitae, consequatur neque unde! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, asperiores 
+        unde eum animi quidem vitae qui dicta sit quisquam placeat!</p>
+
+        <p class="eight"><img src="people.png" height="45px" width="45px" alt="spidey">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Eos, maxime unde. Repudiandae reiciendis inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus 
+        necessitatibus ad quaerat, alias animi ipsum unde sit tempore accusantium hic. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat officia 
+        provident culpa voluptatibus, et blanditiis sed ut tempore, sint quo, earum fugiat voluptate! Saepe ducimus veniam fugiat consectetur maiores recusandae quod eius 
+        expedita nesciunt provident perspiciatis iste exercitationem natus quibusdam hic laboriosam commodi repellat numquam, quae eligendi ipsa aut quo. Lorem ipsum 
+        dolor sit amet consectetur adipisicing elit. Vel officia tempore impedit consequuntur praesentium, tenetur porro 
+        adipisci dolore, perferendis illum itaque beatae, unde animi iste pariatur. Quidem vel praesentium repellat. Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Ratione corrupti fugit quia perspiciatis excepturi, esse modi ipsam.</p>
+
+        <p class="nine"><img src="web.png" height="45px" width="45px" alt="web">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Modi distinctio commodi vitae, consequatur neque unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit iste quod ipsa 
+        consequatur officiis delectus sapiente alias eum dignissimos inventore!</p>
+
+        <p class="ten"><img src="people.png" height="45px" width="45px" alt="spidey">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Eos, maxime unde. Repudiandae reiciendis inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi suscipit 
+        dignissimos officiis veniam modi quas, doloremque enim sit iusto mollitia!</p>
+
+        <p class="eleven"><img src="web.png" height="45px" width="45px" alt="web">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem, ipsum dolor sit amet consectetur 
+        adipisicing elit. Modi distinctio commodi vitae, consequatur neque unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum perspiciatis, 
+        in soluta sed nulla incidunt ea aliquid velit esse ullam.</p>
+
+        <p class="twelve"><img src="people.png" height="45px" width="45px" alt="spidey">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Natus corporis iusto repellat provident voluptatibus nulla necessitatibus, eveniet illum, suscipit enim soluta eum minus 
+        consequatur, reprehenderit amet labore quasi quod rerum laborum nam? Suscipit mollitia aperiam voluptate rerum dolorum fugit 
+        voluptatibus ea inventore ducimus explicabo? Natus eaque consectetur eligendi commodi neque. Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Eos, maxime unde. Repudiandae reiciendis inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quis consectetur 
+        repellat delectus enim veritatis explicabo omnis repudiandae asperiores recusandae?</p>
+
+
+        <h2 style="text-align: center; margin-top:5px;">Relative</h2>
+        <div class="s1"></div>
+        <div class="s2"></div>
+        <div class="s3"></div>
+
+
+        <h2 style="text-align: center; margin-top:5px;">Absolute</h2>
+        <div class="abs">
+            <h4>Hello, This is Batman</h4>
+        </div>
+           
+    </main>
+
+</body>
+</html>
